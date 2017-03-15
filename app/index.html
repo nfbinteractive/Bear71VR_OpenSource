@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, shrink-to-fit=0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="theme-color" content="#000000">
+  <meta name="msapplication-navbutton-color" content="#000000">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
+  <meta name="medium" content="multi"/>
+  <meta name="title" content="NFB/Interactive - Bear 71 VR"/>
+  <meta name="description" content="Constant video surveillance, satellite tracking, radio collars… sometimes it’s hard to tell where the wired world ends and the wild one begins - Bear 71"/>
+  <meta name="keywords" content="bear71, bear 71, nfb, bear documentary, national film board of canada, webvr"/>
+  <link rel="image_src" href="http://interactive.nfb.ca/screens/fb/bear71_FB.jpg" />
+  <link rel="target_url" href="http://bear71vr.nfb.ca"/>
+
+  <meta property="og:url"                content="https://bear71vr.nfb.ca/" />
+  <meta property="og:title"              content="Bear 71 VR" />
+  <meta property="og:description"        content="Explore the intersection of humans, nature and technology in the interactive documentary Bear 71. Questioning how we see the world through the lens of technology, this story blurs the lines between the wild world, and the wired one. nfb.ca/bear71vr" />
+  <meta property="og:image"              content="https://bear71vr.nfb.ca/assets/images/bear71-sharing-thumbnail.jpg" />
+  <meta property="twitter:url"                content="https://bear71vr.nfb.ca/" />
+  <meta property="twitter:title"              content="Bear 71 VR" />
+  <meta property="twitter:description"        content="Explore the intersection of humans, nature and technology - blur the lines between the wild world, and the wired one. nfb.ca/bear71vr" />
+  <meta property="twitter:image"              content="https://bear71vr.nfb.ca/assets/images/bear-71-sharing-thumbnail.jpg" />
+
+  <!-- Origin Trial Token, feature = WebVR, origin = https://b71.jam3.net, expires = 2017-03-31-->
+  <meta http-equiv="origin-trial" data-feature="WebVR" data-expires="2017-03-31" content="Aj7etICAomqPbtO0aeyUOAko/Ze9QYngzDIkHcnwLTBh7thU4l8DvIpHJZov8KkIxJhHQPgGcYmdB4fot/GWIgkAAABLeyJvcmlnaW4iOiJodHRwczovL2I3MS5qYW0zLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVlIiLCJleHBpcnkiOjE0OTA5NzMwNTh9" />
+  <title>NFB/Interactive - Bear 71 VR</title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="assets/style.css" type="text/css">
+  <script>
+  window.__isNativeWebVRAvailable = 'getVRDisplays' in navigator;
+  window.WebVRConfig = {
+    TOUCH_PANNER_DISABLED: true,
+    ROTATE_INSTRUCTIONS_DISABLED: true,
+    CARDBOARD_UI_DISABLED: true,
+    BUFFER_SCALE: 1,
+    ENABLE_DEPRECATED_API: false,
+    FORCE_ENABLE_VR: true
+  };
+  </script>
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+  <script src="bundle.js"></script>
+</body>
+</html>
