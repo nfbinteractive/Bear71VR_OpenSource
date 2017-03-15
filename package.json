@@ -1,0 +1,56 @@
+{
+  "name": "Bear71VR_OpenSource",
+  "version": "1.0.0",
+  "description": "A demo of the sprite map technique from Bear 71 VR",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Tomasz Dysinski",
+    "email": "tom@jam3.com",
+    "url": "https://github.com/Jam3"
+  },
+  "private": true,
+  "dependencies": {
+    "babel-polyfill": "^6.20.0",
+    "clamp": "^1.0.1",
+    "eases": "^1.0.8",
+    "fastclick": "^1.0.6",
+    "gl-vec2": "^1.0.0",
+    "gsap": "^1.18.5",
+    "lerp": "^1.0.3",
+    "load-img": "^1.0.0",
+    "load-json-xhr": "^3.0.3",
+    "lodash.defaults": "^4.2.0",
+    "mobile-detect": "^1.3.3",
+    "object-assign": "^4.1.1",
+    "orbit-controls": "^1.1.1",
+    "three": "^0.81.2",
+    "touches": "^1.2.0",
+    "urlparam": "^1.0.2",
+    "webvr-polyfill": "^0.9.23"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.18.0",
+    "babelify": "^7.3.0",
+    "browserify": "^13.0.1",
+    "budo": "^9.4.7",
+    "glslify": "^5.0.2",
+    "uglify-js": "^2.6.2"
+  },
+  "scripts": {
+    "test": "node test.js",
+    "start": "budo index.js:bundle.js -d app --live -- -t babelify -t glslify",
+    "start:ssl": "budo index.js:bundle.js -d app --ssl --live -- -t babelify -t glslify",
+    "build-debug": "browserify index.js -d -t babelify -t glslify > app/bundle.js",
+    "build": "browserify index.js -t babelify -t glslify | uglifyjs -m -c warnings=false > app/bundle.js"
+  },
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nfbinteractive/Bear71VR_OpenSource.git"
+  },
+  "homepage": "https://github.com/nfbinteractive/Bear71VR_OpenSource",
+  "bugs": {
+    "url": "https://github.com/nfbinteractive/Bear71VR_OpenSource/issues"
+  }
+}
