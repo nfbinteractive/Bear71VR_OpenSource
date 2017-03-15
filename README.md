@@ -1,10 +1,10 @@
 # prj-b71-vr
 
-##Overview
+## Overview
 
 This is an interactive demo of a sprite landscape rendering technique used on [Bear71](https://bear71vr.nfb.ca/).
 
-###Technique overview
+### Technique overview
 
 To render an image map as an interactive field of sprites, we designed a point cloud tile system that turns each pixel of our map into a sprite. 
 
